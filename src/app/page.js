@@ -1,13 +1,11 @@
-import Image from "next/image";
-import SelectionPage from "@/app/pages/selectionPage"
+import React from 'react';
+import TriviaForm from './TriviaForm'; // Note the file extension
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-tr from-slate-200 via-gray-500 to-slate-900 min-h-screen flex flex-col py-8 px-4">
-      <h1 className="text-center text-3xl font-bold mb-4">Welcome to the Trivia Game!</h1>
-      <div className="flex-grow flex flex-col justify-center items-center">
-        <SelectionPage />
-      </div>
+    <div className="container mx-auto py-8">
+      <h1 className="text-3xl font-semibold mb-4">Welcome to the Trivia Game</h1>
+      <TriviaForm />
     </div>
   );
 }
